@@ -62,9 +62,10 @@
 
 # Task 6
 
-#students1 = int(input("Введите число учеников 1 класса: "))
-#students2 = int(input("Введите число учеников 2 класса: "))
-#students3 = int(input("Введите число учеников 3 класса: "))
-#print(f'{(students1 + 1) // 2} Парт необходимо в 3 класс')
-#print(f'{(students2 + 1) // 2} Парт необходимо в 3 класс')
-#print(f'{(students3 + 1) // 2} Парт необходимо в 3 класс')
+students1 = int(input("Введите число учеников 1 класса: "))
+students2 = int(input("Введите число учеников 2 класса: "))
+students3 = int(input("Введите число учеников 3 класса: "))
+print(f'{(students1 + 1) // 2} Парт необходимо в 1 класс')
+print(f'{(students2 + 1) // 2} Парт необходимо в 2 класс')
+print(f'{(students3 + 1) // 2} Парт необходимо в 3 класс')
+print(f'Всего нужно парт: {(1 + students1 + students2 + students3) //2}')
