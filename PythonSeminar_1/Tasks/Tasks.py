@@ -27,12 +27,21 @@
 
 # Task 3
 
-a = int(input("¬ведите первое число: "))
-b = int(input("¬ведите второе число: "))
+#a = int(input("¬ведите первое число: "))
+#b = int(input("¬ведите второе число: "))
 
-if a < b:
-    print(f'„исло {a} меньше')
-elif a > b:
-    print(f'„исло {b} меньше')
-elif a == b:
-    print(f'„исла равны')
+#if a < b:
+#    print(f'„исло {a} меньше')
+#elif a > b:
+#    print(f'„исло {b} меньше')
+#elif a == b:
+#    print(f'„исла равны')
+
+# Task 4
+
+a = int(input("¬ведите число: "))
+
+if 0 < a //1000 < 10:
+    print('YES')
+else:
+    print('NO')
