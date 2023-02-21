@@ -40,7 +40,7 @@
 #m = int(input('Введите ширину: '))
 #k = int(input('Введите количество долек: '))
 
-#if k % n == 0 or k % m == 0:
+#if (k < m * n) and (k % n == 0 or k % m == 0):
 #    print('YES')
 #else:
 #    print('NO')
