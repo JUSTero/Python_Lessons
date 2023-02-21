@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>807856a1-efa8-4877-a02b-581e881888cb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Seminar_2.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
