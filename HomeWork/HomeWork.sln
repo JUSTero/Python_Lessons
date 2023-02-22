@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "HomeWork_1", "HomeWork_1\HomeWork_1.pyproj", "{A3221A6E-893C-4735-B1EA-9AFC96A5BEE0}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "HomeWork_2", "HomeWork_2\HomeWork_2.pyproj", "{EAC53162-7B6F-4901-A58A-48E0C144C94F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A3221A6E-893C-4735-B1EA-9AFC96A5BEE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A3221A6E-893C-4735-B1EA-9AFC96A5BEE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC53162-7B6F-4901-A58A-48E0C144C94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC53162-7B6F-4901-A58A-48E0C144C94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
