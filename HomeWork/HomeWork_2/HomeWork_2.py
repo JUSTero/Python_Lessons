@@ -34,21 +34,35 @@
 
 # Task 2
 
-from random import randint
+#from random import randint
 
 
-x = randint(1, 1000)
-y = randint(1, 1000)
+#x = randint(1, 1000)
+#y = randint(1, 1000)
 
-S = x + y
-P = x * y
+#S = x + y
+#P = x * y
 
-print(f"Сумма чисел равна {S}")
-print(f"Произведение чисел равно {P}")
+#print(f"Сумма чисел равна {S}")
+#print(f"Произведение чисел равно {P}")
 
-for i in range(1, 1000):
-    tempS = S - i
-    tempP = P / i
-    if tempS == tempP:
-        print(f"X = {round(tempP)}, Y = {round(i)}")
-        break
+#for i in range(1, 1000):
+#    tempS = S - i
+#    tempP = P / i
+#    if tempS == tempP:
+#        print(f"X = {round(tempP)}, Y = {round(i)}")
+#        break
+
+# Task 3
+
+N = int(input('Введите число N: '))
+i = 1
+
+print(f'Степени двойки: ')
+ 
+while True:
+	if 2 ** i > N:
+		break
+	else:
+		print(f'{i}. {2 ** i}')
+		i += 1
