@@ -55,14 +55,14 @@
 
 # Task 3
 
-N = int(input('Введите число N: '))
-i = 1
+#N = int(input('Введите число N: '))
+#i = 1
 
-print(f'Степени двойки: ')
+#print(f'Степени двойки: ')
  
-while True:
-	if 2 ** i > N:
-		break
-	else:
-		print(f'{i}. {2 ** i}')
-		i += 1
+#while True:
+#	if 2 ** i > N:
+#		break
+#	else:
+#		print(f'{i}. {2 ** i}')
+#		i += 1
