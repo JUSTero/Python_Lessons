@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Seminar_1", "Tasks\Seminar_1.pyproj", "{33E42077-D189-463B-828A-BBCA0CF98A2B}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Seminar_2", "Seminar_2\Seminar_2.pyproj", "{807856A1-EFA8-4877-A02B-581E881888CB}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Seminar_2", "Seminar_2\Seminar_2.pyproj", "{D392CFB4-5AC4-4737-BA1F-57B1735E0A4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{33E42077-D189-463B-828A-BBCA0CF98A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{33E42077-D189-463B-828A-BBCA0CF98A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{807856A1-EFA8-4877-A02B-581E881888CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{807856A1-EFA8-4877-A02B-581E881888CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D392CFB4-5AC4-4737-BA1F-57B1735E0A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D392CFB4-5AC4-4737-BA1F-57B1735E0A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

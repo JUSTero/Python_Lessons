@@ -2,9 +2,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d392cfb4-5ac4-4737-ba1f-57b1735e0a4e</ProjectGuid>
     <ProjectGuid>a3221a6e-893c-4735-b1ea-9afc96a5bee0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>HomeWork_1.py</StartupFile>
+    <StartupFile>Seminar_2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
