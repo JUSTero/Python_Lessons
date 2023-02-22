@@ -26,22 +26,43 @@
 
 # Task 2
 
-A = 0
-while A <= 1:
-	A = int(input('Введите натуральное число больше 1: '))
-n = 0
-n1 = 1
-n2 = 0
-count = 2
+#A = 0
 
-while True:
-	n = n2 + n1
-	n2 = n1
-	n1 = n
-	count += 1
-	if n == A:
-		print(f'{A} является {count} числом в последовательности Фибоначчи')
-		break
-	elif n > A:
-		print('-1')
-		break
+#while A <= 1:
+#	A = int(input('Введите натуральное число больше 1: '))
+
+#n = 0
+#n1 = 1
+#n2 = 0
+#count = 2
+
+#while True:
+#	n = n2 + n1
+#	n2 = n1
+#	n1 = n
+#	count += 1
+#	if n == A:
+#		print(f'{A} является {count} числом в последовательности Фибоначчи')
+#		break
+#	elif n > A:
+#		print('-1')
+#		break
+
+# Task 3
+
+from random import randint
+
+
+days = int(input('Введите количество рассматриваемых дней от 1 до 100: '))
+count = 0
+max_days = 0
+
+for i in range(days):
+	temp = randint(-51, 51)
+	if temp > 0:
+		count += 1
+		if count > max_days:
+			max_days = count
+	else:
+		count = 0
+print(f'Самая длинная оттепель была {max_days} дней')
