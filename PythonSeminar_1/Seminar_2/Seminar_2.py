@@ -17,9 +17,31 @@
 #n = int(input('Введите целое неотрицательное число: '))
 #n1 = n
 #N = 1
+
 #while n > 0:
 #	N = N * n
 #	n -= 1
+
 #print(f'Произведение чисел от 1 до {n1} равно {N}')
 
 # Task 2
+
+A = 0
+while A <= 1:
+	A = int(input('Введите натуральное число больше 1: '))
+n = 0
+n1 = 1
+n2 = 0
+count = 2
+
+while True:
+	n = n2 + n1
+	n2 = n1
+	n1 = n
+	count += 1
+	if n == A:
+		print(f'{A} является {count} числом в последовательности Фибоначчи')
+		break
+	elif n > A:
+		print('-1')
+		break
