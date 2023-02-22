@@ -50,19 +50,19 @@
 
 # Task 3
 
-from random import randint
+#from random import randint
 
 
-days = int(input('Введите количество рассматриваемых дней от 1 до 100: '))
-count = 0
-max_days = 0
+#days = int(input('Введите количество рассматриваемых дней от 1 до 100: '))
+#count = 0
+#max_days = 0
 
-for i in range(days):
-	temp = randint(-51, 51)
-	if temp > 0:
-		count += 1
-		if count > max_days:
-			max_days = count
-	else:
-		count = 0
-print(f'Самая длинная оттепель была {max_days} дней')
+#for i in range(days):
+#	temp = randint(-51, 51)
+#	if temp > 0:
+#		count += 1
+#		if count > max_days:
+#			max_days = count
+#	else:
+#		count = 0
+#print(f'Самая длинная оттепель была {max_days} дней')
