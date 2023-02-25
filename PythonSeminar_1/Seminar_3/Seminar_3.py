@@ -2,12 +2,30 @@
 
 # Задача 1. Дан список чисел. Определите, сколько в нем встречается различных чисел.
 
+# Задача 2.  Дана последовательность из N целых чисел и число K. 
+# Необходимо сдвинуть всю последовательность (сдвиг - циклический)
+# на K элементов вправо, K – положительное число.
+
 # Task 1
-import random
+#import random
 
-some_list = [randint(1, 10 ** 9)for i in range(int(input("Введите длину списка: ")))]
+#some_list = [random.randint(1, 10 ** 9)for i in range(int(input("Введите длину списка: ")))]
 
-print(f'В списке {len(set(some_list))} различных чисел')
+#print(f'В списке {len(set(some_list))} различных чисел')
 
 # Task 2
 
+import random
+
+some_list = [random.randint(1, 10)for i in range(int(input("Введите длину списка: ")))]
+K = int(input('Введите размер сдвига: '))
+temp = K
+print(f'Начальный список: {some_list}')
+
+for i in range(K):
+	some_list.insert(i,some_list[len(some_list) - K])
+	K -= 1
+
+del some_list[-temp:len(some_list)]
+
+print(f'Список со сдвигом: {some_list}')
