@@ -12,6 +12,38 @@
 # которая подсчитает количество элементов массива, больших предыдущего
 # (элемента с предыдущим номером)
 
+# Задача 5. Формат ввода:
+
+# Вводится количество играющих, затем строки, в которых могут быть их имена. Затем вводится количество имен и сами имена детей для поиска.
+
+# Формат вывода:
+
+# Для каждого имени выведите номер строки (счет с 1), в которой оно первый раз встретилось, или -1, если такого имени не было.
+
+# 7
+# Bessy kept the garden gate,
+# And Mary kept the pantry.
+# Little Betty Blue Lost her holiday shoe.
+# Billy, Billy, come and play.
+# Yes, my Polly, so I will.
+# Little Bobby Snooks was fond of his books.
+# Robert Barnes, my fellow fine, can you shoe this horse of mine?
+
+# Пример ввода:
+
+# 4
+# Mary
+# Jack
+# Billy
+# Bobby
+
+# Пример вывода:
+
+# 2
+# -1
+# 4
+# 6
+
 # Task 1
 
 # import random
@@ -46,13 +78,30 @@
 
 # Task 4
 
-import random
+# import random
 
-some_list = [random.randint(1, 10)for i in range(int(input("Введите длину списка: ")))]
-print(f'Начальный список: {some_list}')
-count = 0
+# some_list = [random.randint(1, 10)for i in range(int(input("Введите длину списка: ")))]
+# print(f'Начальный список: {some_list}')
+# count = 0
 
-for i in range(1,len(some_list)):
-	if some_list[i] > some_list[i - 1]:
-		count += 1
-print(f'Количество элементов массива, больших предыдущего: {count}')
+# for i in range(1,len(some_list)):
+# 	if some_list[i] > some_list[i - 1]:
+# 		count += 1
+# print(f'Количество элементов массива, больших предыдущего: {count}')
+
+# Task 5
+
+# text_list = ['Bessy kept the garden gate,' , 'And Mary kept the pantry.' , 'Little Betty Blue Lost her holiday shoe.' , 'Billy, Billy, come and play.' , 'Yes, my Polly, so I will.' ,
+# 'Little Bobby Snooks was fond of his books.' , 'Robert Barnes, my fellow fine, can you shoe this horse of mine?']
+##text_list = [input() for i in range(int(input("Ввдите количество строк: ")))]
+# print(text_list)
+# name_list = ['Mary' , 'Jack' , 'Billy' , 'Bobby']
+##name_list = [input() for i in range(int(input("Введите количество имён: ")))]
+# print(name_list)
+
+# for i in range(len(name_list)):
+# 	mark = -1
+# 	for j in range(len(text_list)):
+# 		if name_list[i] in text_list[j]:
+# 			mark = j + 1
+# 	print(mark)
