@@ -17,11 +17,11 @@
 
 # Task 2
 
-import random
+#import random
 
-some_list = [random.randint(1, 10)for i in range(int(input("Введите длину списка: ")))]
-K = int(input('Введите размер сдвига: '))
-print(f'Начальный список: {some_list}')
+#some_list = [random.randint(1, 10)for i in range(int(input("Введите длину списка: ")))]
+#K = int(input('Введите размер сдвига: '))
+#print(f'Начальный список: {some_list}')
 
 #for i in range(K):
 #	some_list.insert(i,some_list[len(some_list) - K])
@@ -30,8 +30,11 @@ print(f'Начальный список: {some_list}')
 
 #print(f'Список со сдвигом: {some_list}')
 
-final_list = some_list[K:] + some_list[:K]
-print(f'Список со сдвигом: {final_list}')
+#final_list = some_list[K:] + some_list[:K]
+#print(f'Список со сдвигом: {final_list}')
 
 # Task 3
 
+some_dict = {1 : 3, 2 : 4, 3 : 4}
+
+print(f'Уникальные значения словаря: {set(some_dict.values())}')
