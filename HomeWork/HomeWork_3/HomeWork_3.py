@@ -17,3 +17,21 @@
 # Ш, Э, Ю – 8 очков; Ф, Щ, Ъ – 10 очков. Напишите программу, которая вычисляет стоимость 
 # введенного пользователем слова. Будем считать, что на вход подается только одно слово, 
 # которое содержит либо только английские, либо только русские буквы.
+
+# Task 1
+
+import time
+import random
+
+some_list = [random.randint(1, 1000)for i in range(int(input("Введите длину списка: ")))]
+X = int(input('Введите искомое число X: '))
+start = time.perf_counter()
+#print(some_list.count(X))
+count = 0
+
+for i in range(len(some_list)):
+	if some_list[i] == X:
+		count += 1
+end = time.perf_counter()
+print(f'Число {X} встречактся {count} раз')
+print(end - start)
