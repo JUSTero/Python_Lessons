@@ -116,16 +116,11 @@ import random
 some_list = [random.randint(1, 100)for i in range(int(input("Введите длину списка: ")))]
 print(f'Начальный список: {some_list}')
 n = int(input('Введите искомое число n: '))
-flag = 0
 
-for i in range(len(some_list)):
-	for j in range(i + 1, len(some_list)):
-		if i == j:
-			continue
-		elif some_list[i] + some_list[j] == n:
-			flag += 1
-			break
-if flag > 0:
-	print('YES')
+for i in some_list:
+	if n - i in some_list:
+		print(f'{i} + {n - i} YES')
+		break
 else:
 	print('NO')
+
