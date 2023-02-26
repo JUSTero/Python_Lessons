@@ -33,29 +33,45 @@
 #	if some_list[i] == X:
 #		count += 1
 #end = time.perf_counter()
-#print(f'Число {X} встречактся {count} раз')
+#print(f'Число {X} встречается {count} раз')
 #print(end - start)
 
 # Task 2
 
-import random
+#import random
 
-some_list = [random.randint(1, 1000)for i in range(int(input("Введите длину списка: ")))]
-print(f'Начальный список: {some_list}')
-X = int(input('Введите искомое число X: '))
-some_set = set(some_list)
-temp1 = 0
-temp2 = 0
+#some_list = [random.randint(1, 1000)for i in range(int(input("Введите длину списка: ")))]
+#print(f'Начальный список: {some_list}')
+#X = int(input('Введите искомое число X: '))
+#some_set = set(some_list)
+#temp1 = 0
+#temp2 = 0
 
-for i in range(1, max(some_set)):
-	if X - i in some_set:
-		temp1 = X - i
-		break
-for i in range(1, max(some_set)):
-	if X + i in some_set:
-		temp2 = X + i
-		break
-if X - temp1 < temp2 - X:
-	print(temp1)
-else:
-	print(temp2)
+#for i in range(1, max(some_set)):
+#	if X - i in some_set:
+#		temp1 = X - i
+#		break
+#for i in range(1, max(some_set)):
+#	if X + i in some_set:
+#		temp2 = X + i
+#		break
+#if X - temp1 < temp2 - X:
+#	print(temp1)
+#else:
+#	print(temp2)
+
+# Task 3
+
+points = {'A' : 1, 'E' : 1, 'I' : 1, 'O' : 1, 'U' : 1, 'L' : 1, 'N' : 1, 'S' : 1, 'T' : 1, 'R' : 1, 'D' : 2, 'G' : 2, 'B' : 3, 'C' : 3, 'M' : 3, 'P' : 3,
+		  'F' : 4, 'H' : 4, 'V' : 4, 'W' : 4, 'Y' : 4, 'K' : 5, 'J' : 8, 'X' : 8, 'Q' : 10, 'Z' : 10, 'А' : 1, 'В' : 1, 'Е' : 1, 'И' : 1, 'Н' : 1, 'О' : 1,
+		 'Р' : 1, 'С' : 1, 'Т' : 1, 'Д' : 2, 'К' : 2, 'Л' : 2, 'М' : 2, 'П' : 2, 'У' : 2, 'Г' : 3, 'Ё' : 3, 'Ь' : 3, 'Я' : 3, 'Й' : 4, 'Ы' : 4, 'Ж' : 5,
+		'З' : 5, 'Х' : 5, 'Ц' : 5, 'Ч' : 5, 'Ш' : 8, 'Э' : 8, 'Ю' : 8, 'Ф' : 10, 'Щ' : 10, 'Ъ' : 10, ' ' : 0}
+word = input('Введите слова: ')
+lift_word = word.upper()
+summ = 0
+
+for i in lift_word:
+	summ = summ + points[i]
+	print(f'{i} = {points[i]}p')
+
+print(f'Вы набрали {summ} очков')
