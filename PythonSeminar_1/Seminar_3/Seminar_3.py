@@ -127,3 +127,6 @@
 
 ## import time
 ## start = time.perf_counter()
+
+
+print(list(int(input()) ** 3 for i in range(int(input()))))
