@@ -128,5 +128,7 @@
 ## import time
 ## start = time.perf_counter()
 
+# На вход программе подается натуральное число n, а затем n целых чисел. 
+# Напишите программу, которая создает из указанных чисел список их кубов.
 
-print(list(int(input()) ** 3 for i in range(int(input()))))
+# print(list(int(input()) ** 3 for i in range(int(input()))))
