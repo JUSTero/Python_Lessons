@@ -139,6 +139,6 @@
 
 # Сумма соседних чисел в списке
 
-some_list = [int(input()) for i in range(int(input()))]
-print([some_list[i] + some_list[i + 1] for i in range(len(some_list) - 1)])
+#some_list = [int(input()) for i in range(int(input()))]
+#print([some_list[i] + some_list[i + 1] for i in range(len(some_list) - 1)])
 
