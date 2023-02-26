@@ -44,6 +44,9 @@
 # 4
 # 6
 
+# Задача 6. Есть список чисел, вводят некое число n. Понять, есть ли в списке такие 2 числа, 
+# что их сумма будет равна n.
+
 # Task 1
 
 # import random
@@ -105,3 +108,24 @@
 # 		if name_list[i] in text_list[j]:
 # 			mark = j + 1
 # 	print(mark)
+
+# Task 6
+
+import random
+
+some_list = [random.randint(1, 100)for i in range(int(input("Введите длину списка: ")))]
+print(f'Начальный список: {some_list}')
+n = int(input('Введите искомое число n: '))
+mark = 0
+
+for i in range(len(some_list)):
+	for j in range(len(some_list)):
+		if some_list[j] == some_list[i]:
+			continue
+		elif some_list[i] + some_list[j] == n:
+			mark += 1
+			break
+if mark > 0:
+	print('YES')
+else:
+	print('NO')
