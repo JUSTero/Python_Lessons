@@ -132,3 +132,12 @@
 # Напишите программу, которая создает из указанных чисел список их кубов.
 
 # print([int(input()) ** 3 for i in range(int(input()))])
+
+# Вывести все делители числа n
+
+# print(*[[i for i in range(1, n + 1)if n % i == 0] for n in [int(input())]])
+
+# Сумма соседних чисел в списке
+
+print([i + i + 1 for i in range(int(input()))])
+
