@@ -20,18 +20,42 @@
 
 # Task 1
 
-import time
+#import time
+#import random
+
+#some_list = [random.randint(1, 1000)for i in range(int(input("Введите длину списка: ")))]
+#X = int(input('Введите искомое число X: '))
+#start = time.perf_counter()
+#print(some_list.count(X))
+#count = 0
+
+#for i in range(len(some_list)):
+#	if some_list[i] == X:
+#		count += 1
+#end = time.perf_counter()
+#print(f'Число {X} встречактся {count} раз')
+#print(end - start)
+
+# Task 2
+
 import random
 
 some_list = [random.randint(1, 1000)for i in range(int(input("Введите длину списка: ")))]
+print(f'Начальный список: {some_list}')
 X = int(input('Введите искомое число X: '))
-start = time.perf_counter()
-#print(some_list.count(X))
-count = 0
+some_set = set(some_list)
+temp1 = 0
+temp2 = 0
 
-for i in range(len(some_list)):
-	if some_list[i] == X:
-		count += 1
-end = time.perf_counter()
-print(f'Число {X} встречактся {count} раз')
-print(end - start)
+for i in range(1, max(some_set)):
+	if X - i in some_set:
+		temp1 = X - i
+		break
+for i in range(1, max(some_set)):
+	if X + i in some_set:
+		temp2 = X + i
+		break
+if X - temp1 < temp2 - X:
+	print(temp1)
+else:
+	print(temp2)
