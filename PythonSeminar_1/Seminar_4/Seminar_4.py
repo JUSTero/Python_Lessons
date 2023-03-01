@@ -4,11 +4,9 @@
 # и отслеживает кол-во повторов каждого символа.
 
 string = input('Введите строку: ')
-comp = []
+comp = set()
 
 for i in range(len(string)):
-	if string[i] in comp:
-		continue
-	else:
+	if string[i] not in comp:
 		print(f'"{string[i]}" - {string.count(string[i])}')
-		comp.append(string[i])
+		comp.add(string[i])
