@@ -41,10 +41,12 @@ estimates = [5, 4, 5, 3, 3, 2, 5, 3, 4, 3, 5, 4, 3, 2, 2, 3, 4, 5, 5, 5, 4, 5, 4
 print(estimates)
 
 def fix_estimates(est):
-	maxx = max(est)
+	maximum = max(est)
+	minimum = min(est)
+
 	for i in range(len(est)):
-		if est[i] == maxx:
-			est[i] = min(est)
+		if est[i] == maximum:
+			est[i] = minimum
 	return(est)
 
 print(fix_estimates(estimates))
