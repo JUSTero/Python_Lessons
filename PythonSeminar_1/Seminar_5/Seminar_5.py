@@ -33,3 +33,18 @@
 #	return fib(n - 1) + fib(n - 2)
 
 #print(fib(N))
+
+# Задача 2. Хакер Василий получил доступ к классному журналу и хочет заменить все свои минимальны оценки на максимальные. 
+# Напишите программу. которая заменит оценки Василия. но наоборот: все максимальные - на минимальные.
+
+estimates = [5, 4, 5, 3, 3, 2, 5, 3, 4, 3, 5, 4, 3, 2, 2, 3, 4, 5, 5, 5, 4, 5, 4]
+print(estimates)
+
+def fix_estimates(est):
+	maxx = max(est)
+	for i in range(len(est)):
+		if est[i] == maxx:
+			est[i] = min(est)
+	return(est)
+
+print(fix_estimates(estimates))
