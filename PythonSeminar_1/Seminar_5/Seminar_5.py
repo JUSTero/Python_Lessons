@@ -37,16 +37,32 @@
 # Задача 2. Хакер Василий получил доступ к классному журналу и хочет заменить все свои минимальны оценки на максимальные. 
 # Напишите программу. которая заменит оценки Василия. но наоборот: все максимальные - на минимальные.
 
-estimates = [5, 4, 5, 3, 3, 2, 5, 3, 4, 3, 5, 4, 3, 2, 2, 3, 4, 5, 5, 5, 4, 5, 4]
-print(estimates)
+#estimates = [5, 4, 5, 3, 3, 2, 5, 3, 4, 3, 5, 4, 3, 2, 2, 3, 4, 5, 5, 5, 4, 5, 4]
+#print(estimates)
 
-def fix_estimates(est):
-	maximum = max(est)
-	minimum = min(est)
+#def fix_estimates(est):
+#	maximum = max(est)
+#	minimum = min(est)
 
-	for i in range(len(est)):
-		if est[i] == maximum:
-			est[i] = minimum
-	return(est)
+#	for i in range(len(est)):
+#		if est[i] == maximum:
+#			est[i] = minimum
+#	return(est)
 
-print(fix_estimates(estimates))
+#print(fix_estimates(estimates))
+
+# Задача 3.  Напишите функцию, которая принимает одно число и проверяет, является ли оно простым
+# *Напоминание: Простое число - это число, которое имеет 2 делителя: 1  и n(само число)*
+
+#n = int(input('Введите число: '))
+#count = True
+
+#if n < 4:
+#	print(count)
+#else:
+#	for i in range(2, n // 2 + 1):
+#		if n % i == 0:
+#			count = False
+#			break
+
+#print(count)
