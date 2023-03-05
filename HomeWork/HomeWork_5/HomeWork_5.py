@@ -8,3 +8,20 @@
 #except:
 #    print('Good bye')
 
+# Задача 2. Словом в данной задаче считается последовательность букв, ограниченная пробелами или началом или концом строки. 
+# Выведите все слова из строки в столбик. НЕЛЬЗЯ ПОЛЬЗОВАТЬСЯ МЕТОДАМИ СТРОК (split)
+
+#text = input('Введите текст: ')
+#words = ''
+
+#for i in range(len(text)):
+#	if text[i] == ' ':
+#		print(words)
+#		words = ''
+#	else:
+#		words += text[i]
+
+#print(words)
+
+#text = input('Введите текст: ')
+#print(*text.split(), sep = '\n')
