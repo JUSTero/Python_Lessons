@@ -1,9 +1,9 @@
 # -*- coding: cp1251 -*-
 
-def filling():
-	import random
-	some_list = [random.randint(1, 10)for i in range(int(input("Введите длину списка: ")))]
-	return some_list
+#def filling():
+#	import random
+#	some_list = [random.randint(1, 10)for i in range(int(input("Введите длину списка: ")))]
+#	return some_list
 
 # Задача 1. Даны два массива чисел. Требуется вывести те элементы первого массива 
 # (в том порядке, в каком они идут в первом массиве), которых нет во втором массиве. 
@@ -41,12 +41,12 @@ def filling():
 # Задача 3. Дан список чисел. Посчитайте, сколько в нем пар элементов, равных друг другу. Считается, что любые два элемента,
 # равные друг другу образуют одну пару, которую необходимо посчитать. Вводится список чисел. Все числа списка находятся на разных строках.
 
-list_1 = filling()
-set_1 = set(list_1)
-print(*list_1)
-count = 0
+#list_1 = filling()
+#set_1 = set(list_1)
+#print(*list_1)
+#count = 0
 
-for i in set_1:
-	count += list_1.count(i) // 2
+#for i in set_1:
+#	count += list_1.count(i) // 2
 
-print(count)
+#print(count)
