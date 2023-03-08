@@ -13,3 +13,21 @@
 #	n += a
 
 #print(*res)
+
+# Задача 2. Определить индексы элементов массива (списка), значения которых принадлежат заданному диапазону 
+# (т.е. не меньше заданного минимума и не больше заданного максимума)
+
+#import random
+
+#minimum = int(input('Введите нижний предел: '))
+#maximum = int(input('Введите верхний предел: '))
+
+#start = [random.randint(1, 100)for i in range(int(input("Введите длину списка: ")))]
+#res = []
+
+#for i in range(len(start)):
+#	if minimum <= start[i] <= maximum:
+#		res.append(i)
+
+#print(*start)
+#print(*res)
