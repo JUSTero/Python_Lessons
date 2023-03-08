@@ -9,16 +9,14 @@
 #import random
 
 #list_1 = [random.randint(1, 100)for i in range(int(input("¬ведите длину первого списка: ")))]
-#list_2 = [random.randint(1, 100)for i in range(int(input("¬ведите длину второго списка: ")))]
-#list_3 = list()
+#list_2 = {random.randint(1, 100)for i in range(int(input("¬ведите длину второго списка: ")))}
+#list_3 = []
 
 #print(*list_1)
 #print(*list_2)
 
 #for i in list_1:
-#	if i in list_2:
-#		continue
-#	else:
+#	if i not in list_2:
 #		list_3.append(i)
 
 #print(*list_3)
