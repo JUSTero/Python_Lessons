@@ -73,3 +73,28 @@
 #some_list = [random.randint(1, 10)for i in range(10)]
 #print(some_list)
 #print(max(max_repeat_2(some_list).values()))
+
+# Задача 4. Создайте список из случайных чисел. Найдите второй максимум.
+
+#import random
+
+#def second_max(sl):
+#	max_1 = sl[0]
+#	max_2 = sl[1]
+#	if max_1 < max_2:
+#		max_1, max_2 = max_2, max_1
+#	for i in range(2, len(sl)):
+#		if sl[i] > max_1:
+#			max_1, max_2 = sl[i], max_1
+#		elif sl[i] > max_2:
+#			max_2 = sl[i]
+#	return max_2
+
+#some_list = [random.randint(1, 10)for i in range(10)]
+#print(some_list)
+#some_list = list(set(some_list))
+#print(second_max(some_list))
+#print(some_list)
+#some_list.remove(max(some_list))
+#print(max(some_list))
+
