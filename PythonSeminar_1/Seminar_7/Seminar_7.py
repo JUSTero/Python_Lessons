@@ -45,3 +45,31 @@
 #some_list = [random.randint(1, 10)for i in range(10)]
 #print(some_list)
 #print(loc_max_2(some_list))
+
+# Задача 3. Создайте список из случайных чисел. Найдите максимальное количество его одинаковых элементов.
+
+#import random
+
+#def max_repeat(sl):
+#	maxx = 1
+#	trying = set()
+#	for i in sl:
+#		if i not in trying:
+#			count = sl.count(i)
+#			if count > maxx:
+#				maxx = count
+#				trying.add(i)
+#	return maxx
+
+#def max_repeat_2(sl):
+#	trying = {}
+#	for i in sl:
+#		if i not in trying:
+#			trying[i] = 1
+#		else:
+#			trying[i] += 1
+#	return trying
+
+#some_list = [random.randint(1, 10)for i in range(10)]
+#print(some_list)
+#print(max(max_repeat_2(some_list).values()))
