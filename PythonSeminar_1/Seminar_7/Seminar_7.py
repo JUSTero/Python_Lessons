@@ -27,14 +27,21 @@
 # «адача 2. —оздайте список из случайных чисел. Ќайдите номер его последнего локального максимума (локальный максимум Ч это элемент, 
 # который больше любого из своих соседей).
 
-import random
+#import random
 
-def loc_max(sl):
-	for i in range(1, len(sl) - 1):
-		if sl[i - 1] < sl[i] > sl[i + 1]:
-			maxx = i
-	return maxx
+#def loc_max(sl):
+#	for i in range(1, len(sl) - 1):
+#		if sl[i - 1] < sl[i] > sl[i + 1]:
+#			maxx = i
+#	return maxx + 1
 
-some_list = [random.randint(1, 10)for i in range(10)]
-print(some_list)
-print(loc_max(some_list))
+#def loc_max_2(sl):
+#	for i in range(len(sl) - 2, 0, -1):
+#		if sl[i - 1] < sl[i] > sl[i + 1]:
+#			return i + 1
+#	else:
+#		return False
+
+#some_list = [random.randint(1, 10)for i in range(10)]
+#print(some_list)
+#print(loc_max_2(some_list))
