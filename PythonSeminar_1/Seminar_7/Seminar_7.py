@@ -98,3 +98,10 @@
 #some_list.remove(max(some_list))
 #print(max(some_list))
 
+# Задача 5. Создайте список из случайных чисел. Найдите количество различных элементов в нем.
+
+#import random
+
+#some_list = [random.randint(1, 10)for i in range(10)]
+#print(some_list)
+#print(len(set(some_list)))
