@@ -11,6 +11,8 @@
 	#	line = file.readline()
 
 	#text = file.read().splitlines()
+	#text2 = text[0].split()
+	#print(text2)
 	#text = file.readlines()
 	#print(text)
 
@@ -38,3 +40,21 @@
 
 #with open('res.txt', 'w') as file:
 #	file.write(str(count))
+
+# Задача 2. Дан текстовый файл, вывести список из предпоследних слов в строках, индексы которых кратны 3, если в строке 1 слово, то выводим -1.
+# Результаты вывести в файл res.txt
+
+#res = []
+
+#with open(input('Введите название файла: '), 'r') as file:
+#	text = file.read().splitlines()
+#	for i in range(0, len(text), 3):
+#		temp = text[i].split()
+#		if len(temp) < 2:
+#			res.append('-1')
+#		else:
+#			res.append(temp[-2])
+
+#with open('res.txt','w') as file:
+#	for el in res:
+#		file.write(el + '\n')
