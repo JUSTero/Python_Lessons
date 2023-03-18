@@ -60,12 +60,25 @@
 #	for el in res:
 #		file.write(el + '\n')
 
-with open(input('Введите название файла: '), 'r') as file:
-	with open('res.txt','w') as file2:
-		text = file.read().splitlines()
-		for i in range(0, len(text), 3):
-			temp = text[i].split()
-			if len(temp) < 2:
-				file2.write('-1' + '\n')
-			else:
-				file2.write(temp[-2] + '\n')
+#with open(input('Введите название файла: '), 'r') as file:
+#	with open('res.txt','w') as file2:
+#		text = file.read().splitlines()
+#		for i in range(0, len(text), 3):
+#			temp = text[i].split()
+#			if len(temp) < 2:
+#				file2.write('-1' + '\n')
+#			else:
+#				file2.write(temp[-2] + '\n')
+
+# Задача 3. Объединить текст из двух файлов в один.
+
+#with open('test1.txt', 'r') as file:
+#	text = file.read().splitlines()
+
+#with open('test2.txt', 'r') as file:
+#	with open('res.txt', 'w') as res:
+#		text2 = file.read().splitlines()
+#		for el in text:
+#			res.write(el + '\n')
+#		for el in text2:
+#			res.write(el + '\n')
