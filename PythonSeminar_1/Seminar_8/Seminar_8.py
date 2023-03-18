@@ -47,6 +47,7 @@
 #res = []
 
 #with open(input('¬ведите название файла: '), 'r') as file:
+	
 #	text = file.read().splitlines()
 #	for i in range(0, len(text), 3):
 #		temp = text[i].split()
@@ -58,3 +59,13 @@
 #with open('res.txt','w') as file:
 #	for el in res:
 #		file.write(el + '\n')
+
+with open(input('¬ведите название файла: '), 'r') as file:
+	with open('res.txt','w') as file2:
+		text = file.read().splitlines()
+		for i in range(0, len(text), 3):
+			temp = text[i].split()
+			if len(temp) < 2:
+				file2.write('-1' + '\n')
+			else:
+				file2.write(temp[-2] + '\n')
