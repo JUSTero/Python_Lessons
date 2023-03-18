@@ -72,11 +72,10 @@
 
 # Задача 3. Объединить текст из двух файлов в один.
 
-#with open('test1.txt', 'r') as file:
-#	text = file.read().splitlines()
-
-#with open('test2.txt', 'r') as file:
-#	with open('res.txt', 'w') as res:
+#with open('res.txt', 'w') as res:
+#	with open('test1.txt', 'r') as file:
+#		text = file.read().splitlines()
+#	with open('test2.txt', 'r') as file:
 #		text2 = file.read().splitlines()
 #		for el in text:
 #			res.write(el + '\n')
