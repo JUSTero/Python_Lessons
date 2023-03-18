@@ -92,13 +92,10 @@
 #		file.write(str(random.randint(0,100)) + '\n')
 
 #with open('example.txt', 'r') as file:
-#	summa = int(input('¬ведите искомое число: '))
+#	n = int(input('¬ведите искомое число: '))
 #	text = file.read().splitlines()
-#	flag = 0
-#	for i in range(len(text)):
-#		if not flag:
-#			for j in range(len(text)):
-#				if int(text[i]) + int(text[j]) == summa:
-#					print(f'{text[i]} + {text[j]} = {summa}')
-#					flag = 1
-#					break
+#	res = set(text)
+#	for i in res:
+#		if str(n - int(i)) in res:
+#			print(f'{n - int(i)} + {int(i)} = {n}')
+#			break
