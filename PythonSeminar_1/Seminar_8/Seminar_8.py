@@ -81,3 +81,24 @@
 #			res.write(el + '\n')
 #		for el in text2:
 #			res.write(el + '\n')
+
+# Задача 4. Дан текстовый файл с некоторым количеством строк, в каждой из которых записано целое число.
+# Вводится число, нужно найти такие числа из файла, которые в сумме дают вводимое число.
+
+#import random
+
+#with open('example.txt', 'w') as file:
+#	for i in range(100):
+#		file.write(str(random.randint(0,100)) + '\n')
+
+#with open('example.txt', 'r') as file:
+#	summa = int(input('Введите искомое число: '))
+#	text = file.read().splitlines()
+#	flag = 0
+#	for i in range(len(text)):
+#		if not flag:
+#			for j in range(len(text)):
+#				if int(text[i]) + int(text[j]) == summa:
+#					print(f'{text[i]} + {text[j]} = {summa}')
+#					flag = 1
+#					break
