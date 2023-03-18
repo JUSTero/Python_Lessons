@@ -21,3 +21,19 @@
 #		print(i)
 
 #print_res(out_last_str(lines, file))
+
+# Задача 2. Требуется реализовать функцию longest_words(file), которая записывает в файл result.txt слово, 
+# имеющее максимальную длину (или список слов, если таковых несколько).
+
+#def longest_word(file):
+#	max_len = 1
+#	with open(file, 'r') as file:
+#		with open('result.txt', 'a') as res_file:
+#			text = file.read()
+#			str_list = text.split()
+#			for el in str_list:
+#				if len(el) > max_len: max_len = len(el)
+#			for el in str_list:
+#				if len(el) == max_len: res_file.write(el + '\n')
+
+#longest_word('ex.txt')
