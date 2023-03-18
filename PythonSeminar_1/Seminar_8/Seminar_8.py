@@ -28,6 +28,8 @@
 
 #with open(input('¬ведите название файла: '), 'r') as file:
 #	symbol = input('¬ведите искомый символ: ')
+#	text = file.read()
+#	print(text.count(symbol))
 #	line = file.readline()
 #	while line:
 #		count += line.count(symbol)
