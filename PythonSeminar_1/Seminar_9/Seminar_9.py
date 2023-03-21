@@ -5,15 +5,21 @@
 import random
 import telebot
 import json
+from pars import zodiak
 
 token = '6063376644:AAG_y0YYtQ1vW0yjt72QFFBucH5GGhFNOAQ'
 
 bot = telebot.TeleBot(token)
 
-with open('horoscope.json', 'r') as horo:
+with open('horoscope.json', 'r', encoding = 'utf-8') as horo:
 	horoscope_dict = json.load(horo)
 
 @bot.message_handler(commands=['start'])
+def start(message):
+	bot.send_message(message.chat.id, 'Добро пожаловать!')
+	welcome(message)
+
+@bot.message_handler(content_types=['text'])
 def welcome(message):
 	markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
 
@@ -27,7 +33,9 @@ def welcome(message):
 
 	markup.add(item1, item2, item3, item4, item5, item6, item7)
 
-	bot.send_message(message.chat.id, 'Добро пожаловать! Выберите нужный вам пункт меню: ', reply_markup=markup)
+	bot.send_message(message.chat.id, 'Чем зймемся?', reply_markup=markup)
+
+	bot.register_next_step_handler(message, answer)
 
 
 @bot.message_handler(content_types=['text'])
@@ -43,7 +51,7 @@ def answer(message):
 
 	elif message.text.lower() == 'гороскоп':
 
-		markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
+		markup2 = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
 
 		item1 = telebot.types.KeyboardButton('Овен')
 		item2 = telebot.types.KeyboardButton('Телец')
@@ -57,10 +65,11 @@ def answer(message):
 		item10 = telebot.types.KeyboardButton('Стрелец')
 		item11 = telebot.types.KeyboardButton('Дева')
 		item12 = telebot.types.KeyboardButton('Рыбы')
+		item13 = telebot.types.KeyboardButton('Выйти')
 
-		markup.add(item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12)
+		markup2.add(item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13)
 
-		bot.send_message(message.chat.id, 'Выберите знак зодиака', reply_markup=markup)
+		bot.send_message(message.chat.id, 'Выберите знак зодиака', reply_markup=markup2)
 
 		bot.register_next_step_handler(message, horoscope)
 
@@ -77,6 +86,7 @@ def answer(message):
 def guess_the_number(message):
 	if message.text.lower() == f'{number}':
 		bot.send_message(message.chat.id, 'Угадали!')
+		welcome(message)
 
 	elif message.text.lower() > f'{number}':
 		bot.send_message(message.chat.id, 'Меньше!')
@@ -88,18 +98,11 @@ def guess_the_number(message):
 
 @bot.message_handler(content_types=['text'])
 def horoscope(message):
-	markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
-
-	item13 = telebot.types.KeyboardButton('Выйти')
-
-	markup.add(item13)
-
 	if message.text != 'Выйти':
-		bot.send_message(message.chat.id, horoscope_dict[message.text], reply_markup = markup)
+		bot.send_message(message.chat.id, zodiak(horoscope_dict[message.text]))
 		bot.register_next_step_handler(message, horoscope)
 	else:
-		bot.register_next_step_handler(message, welcome)
+		welcome(message)
 
 
 bot.polling(none_stop = True)
-
