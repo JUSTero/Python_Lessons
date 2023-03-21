@@ -5,7 +5,7 @@
 import random
 import telebot
 import json
-from pars import zodiak
+from pars_horoscope import zodiak
 
 token = '6063376644:AAG_y0YYtQ1vW0yjt72QFFBucH5GGhFNOAQ'
 
