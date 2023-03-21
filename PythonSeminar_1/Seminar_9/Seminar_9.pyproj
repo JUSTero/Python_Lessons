@@ -22,7 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Seminar_9.py" />
-    <Compile Include="pars.py" />
+    <Compile Include="pars_horoscope.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Horoscope.json" />
