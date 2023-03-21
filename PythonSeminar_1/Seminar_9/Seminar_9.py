@@ -2,6 +2,9 @@
 
 # First Bot
 
+def rand_number():
+	return random.randint(1, 11)
+
 import random
 import telebot
 import json
@@ -33,7 +36,7 @@ def welcome(message):
 
 	markup.add(item1, item2, item3, item4, item5, item6, item7)
 
-	bot.send_message(message.chat.id, 'Чем зймемся?', reply_markup=markup)
+	bot.send_message(message.chat.id, 'Чем займемся?', reply_markup=markup)
 
 	bot.register_next_step_handler(message, answer)
 
@@ -42,12 +45,15 @@ def welcome(message):
 def answer(message):
 	if message.text.lower() == 'рандомное число':
 		bot.send_message(message.chat.id, str(random.randint(1, 10)))
+		welcome(message)
 
 	elif message.text.lower() == 'кинуть кость':
 		bot.send_message(message.chat.id, f'Ваше число: {str(random.randint(1, 7))}')
+		welcome(message)
 
 	elif message.text.lower() == 'как дела?':
 		bot.send_message(message.chat.id, 'Довольно неплохо')
+		welcome(message)
 
 	elif message.text.lower() == 'гороскоп':
 
@@ -75,8 +81,8 @@ def answer(message):
 
 	elif message.text.lower() == 'загадай число':
 		global number
-		number = random.randint(1, 11)
-		bot.send_message(message.chat.id, 'Загадал')
+		number = rand_number()
+		bot.send_message(message.chat.id, 'Загадал, если не хотите угадывать, напишите хватит')
 		bot.register_next_step_handler(message, guess_the_number)
 
 	else:
@@ -84,15 +90,17 @@ def answer(message):
 
 @bot.message_handler(content_types=['text'])
 def guess_the_number(message):
-	if message.text.lower() == f'{number}':
+	if message.text.lower() == 'хватит':
+		welcome(message)
+	elif int(message.text.lower()) == number:
 		bot.send_message(message.chat.id, 'Угадали!')
 		welcome(message)
 
-	elif message.text.lower() > f'{number}':
+	elif int(message.text.lower()) > number:
 		bot.send_message(message.chat.id, 'Меньше!')
 		bot.register_next_step_handler(message, guess_the_number)
 
-	elif message.text.lower() < f'{number}':
+	elif int(message.text.lower()) < number:
 		bot.send_message(message.chat.id, 'Больше!')
 		bot.register_next_step_handler(message, guess_the_number)
 
