@@ -10,7 +10,7 @@ import telebot
 import json
 from pars_horoscope import zodiak
 
-token = '6063376644:AAG_y0YYtQ1vW0yjt72QFFBucH5GGhFNOAQ'
+token = 'Token'
 
 bot = telebot.TeleBot(token)
 
